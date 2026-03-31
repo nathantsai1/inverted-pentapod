@@ -3,18 +3,14 @@
     change as needed
 */
 
-#ifndef <math.h>
-    #include <math.h>
-#endif
-
 #define BIG_R 140 // radii top circle 
 #define SMALL_R 89.622 // radius base
 #define TOP_HEIGHT 130 // heights are relative and must be changed over time
 #define BOTTOM_HEIGHT 100
-#define TOTAL_TIME 20 // in seconds
+#define TOTAL_TIME 20000 // in seconds
 
 
-FIXME: reset the size
+TODO: reset the size
 #define LEG1_SIZE 100
 #define LEG2_SIZE 100
 /*
@@ -31,9 +27,9 @@ double getCurrTime(double time, int leg) {
 }
 
 double height(double time, int leg) {
-    if (time < TIME*4/5) {
+    if (time < TOTAL_TIME*4/5)
         return TOP_HEIGHT*1.0;
     else {
-        return (100*(TOP_HEIGHT - BOTTOM_HEIGHT) / pow(TOTAL_TIME, 2)) * pow((getCurrTime(time, leg) - (9/10)*TOTAL_TIME), 2) + BOTTOM_HEIGHT)
+        return ((100*(TOP_HEIGHT - BOTTOM_HEIGHT) / pow(TOTAL_TIME, 2)) * pow((getCurrTime(time, leg) - (9/10)*TOTAL_TIME), 2) + BOTTOM_HEIGHT);
     }
 }
