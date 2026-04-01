@@ -23,3 +23,35 @@ double legSlopeXY(int leg) { // slope from center to base of leg
 double legSlopeXYZ(double time, int leg) {
     return (topLegCoord(time, 1, leg) - bottomLegCoord(1, leg)) / ((topLegCoord(time, 0, leg) - bottomLegCoord(0, leg)));
 }
+
+double motor0Rot(double time, int leg) {
+    return atan(
+        fabs (
+            (legSlopeXY(leg) - legSlopeXYZ(time, leg)) / 
+            (1 + legSlopeXY(leg)*legSlopeXYZ(time, leg))
+        )
+    );
+}
+
+double motor0(double time, int leg) { // final equation
+    return atan(
+        BTTXY_Orange(ime, leg) /
+        h(time, leg)
+    );
+}
+
+double motor1(double time, int leg) { // final equation
+    return (
+        acos(
+            (pow(LEG2_SIZE, 2) + pow(LEG2_SIZE, 2)-(pow(baseToTopXYZ(time, leg), 2) + pow(height(time, leg), 2))) /
+            (2*LEG1_SIZE*LEG2_SIZE)
+        )
+    );
+}
+
+double motor2(double time, int leg) { // final equation
+    return (
+        atan(baseToTopXYZ(time, leg) * sin(motor0Rot(time, leg)) / height(time, leg)) +
+        acos((pow(LEG1_SIZE, 2) + )
+    );
+}

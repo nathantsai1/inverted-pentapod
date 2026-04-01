@@ -22,3 +22,14 @@ double topLegCoord(double time, int coord, int leg) {
         return height(time, leg);
     }
 }
+
+double baseToTopXYZ(double time, int leg) {
+    return sqrt(
+        pow(baseLegCoord(1, leg) - topLegCoord(time 1, leg), 2) +
+        pow(baseLegCoord(2, leg) - topLegCoord(time 2, leg), 2)
+    )
+}
+
+double BTTXY_Orange(double time, int leg) {
+    return cos(motor0Rot(time, leg)) * baseToTopXYZ(time, leg);
+}
