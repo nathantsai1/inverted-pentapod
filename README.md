@@ -20,7 +20,7 @@ I think the robot could be a lot smaller
 ![schem](src\schem.png)
 ### General overview (there's supposed to be 5 legs but I'm scared that having more than 1 will significantly slow down Fusion)
 ![thing](src/general.png)
-### Pentapod with top
+### Pentapod with top (top now has 240mm radius)
 ![thing](src\bottom+top.png)
 ### top part of leg
 ![topleg](src\l3.png)
@@ -32,19 +32,17 @@ I think the robot could be a lot smaller
 ![base](src\base.png)
 
 ### BOM
-| **mfg name** | **Description**                                                | **Unit price** | **quantity** | **Price** | **shipping** | **total** | **link**                                                                                                                                |
-|--------------|----------------------------------------------------------------|----------------|--------------|-----------|--------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------|
-| HOME DEPOT   | (By-the-Foot) 18/2 Brown Solid CU CL2 Thermostat Wire          | $0.26          | 6            | $1.56     |              | $1.56     | https://www.homedepot.com/p/Southwire-By-the-Foot-18-2-Brown-Solid-CU-CL2-Thermostat-Wire-64162199/204632887                             |
-| HOME DEPOT   | wire nuts                                                      | $5.42          | 1            | $5.42     |              | $5.42     | https://www.homedepot.com/p/Commercial-Electric-Standard-Wire-Connector-Assortment-30-Pack-ESA-30/315849553                              |
-| HOME DEPOT   | shipping, taxes, tariffs                                       |                |              | $0.00     | $0.00        | $0.00     |                                                                                                                                          |
-| TINYSINE     | tower pro sg90 motor                                           | $1.90          | 16           | $30.40    |              | $30.40    | https://www.tinyosshop.com/sg90-micro-servo?filter_name=sg90&filter_description=true&filter_sub_category=true                            |
-| TINYSINE     | shipping, taxes, tariffs                                       |                |              |           | $12.00       |           |                                                                                                                                          |
-| BUDDY RC     | XT60 Male Connectors for Charger                               | $3.49          | 1            | $3.49     |              | $3.49     | https://www.buddyrc.com/products/xt60-device-kit-charger-side-4-pcs?variant=44442952564974                                               |
-| BUDDY RC     |  Tattu 1300mAh 45C 3S1P 11.1V Lipo Battery Pack with XT60 plug | $16.49         | 2            | $32.98    |              | $32.98    | https://www.buddyrc.com/products/gens-ace-bashing-11-1v-2200mah-35c-3s1p-g-tech-lipo-battery-pack-with-xt60-plug?variant=44339949142254  |
-| BUDDY RC     | voltage checker/alarm                                          | $4.49          | 2            | $8.98     |              | $8.98     | https://www.buddyrc.com/products/aok-digital-voltage-checker-and-alarm?variant=30735569715286                                            |
-| BUDDY RC     | mini charger(psu not included)                                 | $24.99         | 1            | $24.99    |              | $24.99    | https://www.buddyrc.com/products/gens-ace-imars-mini-g-tech-60w-rc-battery-charger-eco-friendly-version?variant=44104142782702           |
-| BUDDY RC     | ztw 6a UBEC                                                    | $14.99         | 2            | $29.98    |              | $29.98    | https://www.buddyrc.com/products/ztw-6a-ubec?variant=30274461466710                                                                      |
-| BUDDY RC     | shipping, taxes, tariffs                                       |                |              | $0.00     |              | $0.00     |                                                                                                                                          |
+|Name                                                 |Purpose                 |Quantity|Total Cost (USD)|Link                                                                                                                                   |Distributor|
+|-----------------------------------------------------|------------------------|--------|----------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------|
+|(By-the-Foot) 18/2 Brown Solid CU CL2 Thermostat Wire|wire things             |6       |1.56            |https://www.homedepot.com/p/Southwire-By-the-Foot-18-2-Brown-Solid-CU-CL2-Thermostat-Wire-64162199/204632887                           |HOME DEPOT |
+|wire nuts                                            |make parallel circuits  |1       |5.42            |https://www.homedepot.com/p/Commercial-Electric-Standard-Wire-Connector-Assortment-30-Pack-ESA-30/315849553                            |HOME DEPOT |
+|shipping, taxes, tariffs                             |                        |        |0.00            |                                                                                                                                       |HOME DEPOT |
+|tower pro sg90 motor                                 |rotate thing            |16      |30.40           |https://www.tinyosshop.com/sg90-micro-servo?filter_name=sg90&filter_description=true&filter_sub_category=true                          |TINYSINE   |
+|XT60 Male Connectors for Charger                     |connect battery->project|1       |3.49            |https://www.buddyrc.com/products/xt60-device-kit-charger-side-4-pcs?variant=44442952564974                                             |BUDDY RC   |
+|Gens Ace 3s 2200mAh XT60 plug                        |batterify project       |2       |32.98           |https://www.buddyrc.com/products/gens-ace-bashing-11-1v-2200mah-35c-3s1p-g-tech-lipo-battery-pack-with-xt60-plug?variant=44339949142254|BUDDY RC   |
+|voltage checker/alarm                                |beep when bad voltage   |2       |8.98            |https://www.buddyrc.com/products/aok-digital-voltage-checker-and-alarm?variant=30735569715286                                          |BUDDY RC   |
+|mini charger(psu not included)                       |charge thing            |1       |24.99           |https://www.buddyrc.com/products/gens-ace-imars-mini-g-tech-60w-rc-battery-charger-eco-friendly-version?variant=44104142782702         |BUDDY RC   |
+|ztw 6a UBEC                                          |7.4v->5v supply         |2       |29.98           |https://www.buddyrc.com/products/ztw-6a-ubec?variant=30274461466710                                                                    |BUDDY RC   |
 
 Subtotal: $137.80 <br>
 shipping: $12.00<br>
