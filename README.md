@@ -12,12 +12,14 @@ THis was made because I thought that making an overcomplicated system of showing
 
 This was a steep-ish learning curve, but very interesting! I learned what a wire nut is!
 
+## Things to improve upon
+I think that using normal cardashian coordinates was a bad idea. If I had to do it again, I'd use polar coordinates to make vectors a lot easier to use. 
+I think the robot could be a lot smaller
 ## Library
 ### general schematic
 ![schem](src\schem.png)
 ### General overview (there's supposed to be 5 legs but I'm scared that having more than 1 will significantly slow down Fusion)
 ![thing](src/general.png)
-![thing](image.png)
 ### Pentapod with top
 ![thing](src\bottom+top.png)
 ### top part of leg
